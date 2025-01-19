@@ -1,0 +1,22 @@
+
+saya akan membuat progam analisa sentimen 
+
+saya mempunyai data negatif dan positif
+negatif : J:\Drive Saya\analisa sentimen git\negative.tsv
+positif : J:\Drive Saya\analisa sentimen git\positif.tsv
+data di atas mempunyai atribut 
+word	weight 
+
+data yang akan saya olah adalah : 
+J:\Drive Saya\analisa sentimen git\percobaan 3\gojek-clear-data.csv
+data di atas mempunyai atribut : 
+userName,content 
+
+dari data set gojek-clear-data.csv coba berikan weight 
+berikan weight sesuai dari kata-katanya 
+
+lalu save di  csv dengan nama gojek-clear-data-weight.csv
+dengan atribut : 
+userName,content,weight
+
+

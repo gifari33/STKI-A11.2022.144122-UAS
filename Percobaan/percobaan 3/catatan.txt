@@ -1,0 +1,22 @@
+catatan :
+
+saya akan membuat progam analisa sentimen 
+
+saya mempunyai data negatif dan positif
+negatif : J:\Drive Saya\analisa sentimen git\negative.tsv
+positif : J:\Drive Saya\analisa sentimen git\positif.tsv
+data di atas mempunyai atribut 
+word	weight 
+
+data yang akan saya olah adalah : 
+J:\Drive Saya\analisa sentimen git\percobaan 3\gojek-clear-data.csv
+data di atas mempunyai atribut : 
+userName,content 
+
+dari data di atas coba pisahkan antara data yang  positif dan negatifnya, 
+dan berikan berat dari data di atas  berdasarkan sentimen yang dihasilkan. 
+dan coba hapus kata yang tidak tidak berat seperti "nya" dan lain sebaginya 
+
+lalu simpan di folder 
+J:\Drive Saya\analisa sentimen git\percobaan 3\gojek-clear-positif.csv
+J:\Drive Saya\analisa sentimen git\percobaan 3\gojek-clear-negatif.csv

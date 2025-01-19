@@ -1,0 +1,656 @@
+saya memili data dengan path : 
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\new-data.csv
+
+dengan isi data : 
+userName,content,score,at,appVersion,corrected_content,cleaned_content,tokens,filtered_tokens,stemmed_tokens
+Yuga Edit,akun gopay saya di blok,1,2022-01-21 10:52:12,4.9.3,akun gopay saya di blok,akun gopay saya di blok,"['akun', 'gopay', 'saya', 'di', 'blok']","['akun', 'gopay', 'blok']","['akun', 'gopay', 'blok']"
+ff burik,Lambat sekali sekarang ini bosssku apk gojek gk kaya dulu,3,2021-11-30 15:40:38,4.9.3,Lambat sekali sekarang ini bosssku apk gojek gk kaya dulu,Lambat sekali sekarang ini bosssku apk gojek gk kaya dulu,"['lambat', 'sekali', 'sekarang', 'ini', 'bosssku', 'apk', 'gojek', 'gk', 'kaya', 'dulu']","['lambat', 'bosssku', 'apk', 'gojek', 'kaya']","['lambat', 'bosssku', 'apk', 'gojek', 'kaya']"
+Anisa Suci Rahmayuliani,Kenapa sih dari kemarin sy buka aplikasi gojek malah keluar sendiri terus Saya kasih bintang 2 dulu kalo sudah normal sy kasih bintang 7,4,2021-11-29 22:58:12,4.9.3,Kenapa sih dari kemarin sy buka aplikasi gojek malah keluar sendiri terus Saya kasih bintang 2 dulu kalo sudah normal sy kasih bintang 7,Kenapa sih dari kemarin sy buka aplikasi gojek malah keluar sendiri terus Saya kasih bintang 2 dulu kalo sudah normal sy kasih bintang 7,"['kenapa', 'sih', 'dari', 'kemarin', 'sy', 'buka', 'aplikasi', 'gojek', 'malah', 'keluar', 'sendiri', 'terus', 'saya', 'kasih', 'bintang', '2', 'dulu', 'kalo', 'sudah', 'normal', 'sy', 'kasih', 'bintang', '7']","['kemarin', 'buka', 'aplikasi', 'gojek', 'keluar', 'bintang', 'normal', 'bintang', '7']","['kemarin', 'buka', 'aplikasi', 'gojek', 'keluar', 'bintang', 'normal', 'bintang', '7']"
+naoki yakuza,Baru download gojek dan hape baru trus ditop u gopay transaksi dialfamart transaksi bloked transaksilaporan di pusat bantuan gak jelas yang ditanyakan apa jawaban lainlama lama gojek dikelola Tokopedia udah nyimpangapa gojek anak bangsa seperti dulu apa punya Tokopedia,1,2022-09-03 15:21:17,4.9.3,Baru download gojek dan hape baru trus ditop u gopay transaksi dialfamart transaksi bloked transaksilaporan di pusat bantuan gak jelas yang ditanyakan apa jawaban lainlama lama gojek dikelola Tokopedia udah nyimpangapa gojek anak bangsa seperti dulu apa punya Tokopedia,Baru download gojek dan hape baru trus ditop u gopay transaksi dialfamart transaksi bloked transaksilaporan di pusat bantuan gak jelas yang ditanyakan apa jawaban lainlama lama gojek dikelola Tokopedia udah nyimpangapa gojek anak bangsa seperti dulu apa punya Tokopedia,"['baru', 'download', 'gojek', 'dan', 'hape', 'baru', 'trus', 'ditop', 'u', 'gopay', 'transaksi', 'dialfamart', 'transaksi', 'bloked', 'transaksilaporan', 'di', 'pusat', 'bantuan', 'gak', 'jelas', 'yang', 'ditanyakan', 'apa', 'jawaban', 'lainlama', 'lama', 'gojek', 'dikelola', 'tokopedia', 'udah', 'nyimpangapa', 'gojek', 'anak', 'bangsa', 'seperti', 'dulu', 'apa', 'punya', 'tokopedia']","['baru', 'download', 'gojek', 'hape', 'baru', 'trus', 'ditop', 'u', 'gopay', 'transaksi', 'dialfamart', 'transaksi', 'bloked', 'transaksilaporan', 'pusat', 'bantuan', 'jelas', 'ditanyakan', 'jawaban', 'lainlama', 'gojek', 'dikelola', 'tokopedia', 'udah', 'nyimpangapa', 'gojek', 'anak', 'bangsa', 'punya', 'tokopedia']","['baru', 'download', 'gojek', 'hape', 'baru', 'trus', 'top', 'u', 'gopay', 'transaksi', 'dialfamart', 'transaksi', 'bloked', 'transaksilaporan', 'pusat', 'bantu', 'jelas', 'tanya', 'jawab', 'lainlama', 'gojek', 'kelola', 'tokopedia', 'udah', 'nyimpangapa', 'gojek', 'anak', 'bangsa', 'punya', 'tokopedia']"
+Trio Sugianto,Mantap,5,2022-01-15 10:05:27,4.9.3,Mantap,Mantap,['mantap'],['mantap'],['mantap']
+
+coba buatkan kode untuk menampilkan stemmed_tokens terbanyak 50 kata saja 
+
+
+
+dari data : 
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\new-data.csv 
+
+coba pisakan data yang mengandung dari kata : 
+gojek
+aplikasi 
+driver 
+gopay
+promo
+layan
+bayar 
+pesan 
+gofood 
+makanan 
+akun 
+order 
+
+apa bila terdapat kata di atas pada kalimat : stemmed_tokens 
+
+maka pisakan pada file csv baru 
+buat file csv bari : 
+gojek.csv
+aplikasi.csv
+driver.csv
+gopa.csv
+
+laya.csv
+bayar.csv
+pesan.csv
+gofood.csv
+makanan.csv
+akun.csv
+order.csv
+
+lalu simpan lah data pada file csv baru tersebut simpan semuanya dengan atribut 
+userName,content,score,at,appVersion,corrected_content,cleaned_content,tokens,filtered_tokens,stemmed_tokens
+
+
+saya memili data set sebbagai berikut : 
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\gojek.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\aplikasi.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\driver.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\gopay.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\promo.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\layan.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\bayar.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\pesan.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\gofood.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\makanan.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\akun.csv
+C:\Users\ghiff\Documents\kuliah\Analisa_Sentimen_Gojek\percobaan 16\order.csv
+
+dengan contoh data : (semua file csv bentuknya sama)
+userName,content,score,at,appVersion,corrected_content,cleaned_content,tokens,filtered_tokens,stemmed_tokens
+Yuga Edit,akun gopay saya di blok,1,2022-01-21 10:52:12,4.9.3,akun gopay saya di blok,akun gopay saya di blok,"['akun', 'gopay', 'saya', 'di', 'blok']","['akun', 'gopay', 'blok']","['akun', 'gopay', 'blok']"
+Leman Terry,Kasih vocher dong gojek mana akun lama gak pernah kasih vocher gojek jangan pelit,5,2022-04-07 14:53:01,4.9.3,Kasih vocher dong gojek mana akun lama gak pernah kasih vocher gojek jangan pelit,Kasih vocher dong gojek mana akun lama gak pernah kasih vocher gojek jangan pelit,"['kasih', 'vocher', 'dong', 'gojek', 'mana', 'akun', 'lama', 'gak', 'pernah', 'kasih', 'vocher', 'gojek', 'jangan', 'pelit']","['vocher', 'gojek', 'akun', 'vocher', 'gojek', 'pelit']","['vocher', 'gojek', 'akun', 'vocher', 'gojek', 'pelit']"
+
+
+coba tampilkan kata yang sering muncul pada file file di atas pada atribut "stemmed_tokens"
+tampilkan 50 kata saja 
+
+
+coba buat yang rapi dan mudah di pahami 
+contohnya : 
+file gojek.csv : 
+1. gojek 
+dll 
+
+
+saya memiliki data yang isinya adalah ulasan dari gojek 
+coba buatkan kata kata dari kata kata di bawah ini 
+dan buat label 
+
+tentang gojek : 
+File gojek.csv:
+1. gojek (33103 kali)
+2. aplikasi (6802 kali)
+3. driver (5494 kali)
+4. bantu (3276 kali)
+5. tolong (2622 kali)
+6. gopay (2552 kali)
+7. baik (2482 kali)
+8. guna (2336 kali)
+9. udah (2322 kali)
+10. banget (2321 kali)
+11. akun (2185 kali)
+12. pesan (1972 kali)
+13. layan (1956 kali)
+14. promo (1897 kali)
+15. order (1774 kali)
+16. bayar (1751 kali)
+17. gofood (1706 kali)
+18. kecewa (1671 kali)
+19. makan (1604 kali)
+20. masuk (1470 kali)
+21. baru (1451 kali)
+22. mudah (1438 kali)
+23. bagus (1328 kali)
+24. mahal (1282 kali)
+25. pihak (1281 kali)
+26. saldo (1246 kali)
+27. buka (1242 kali)
+28. apk (1219 kali)
+29. biaya (1191 kali)
+30. voucher (1188 kali)
+31. terimakasih (1187 kali)
+32. susah (1128 kali)
+33. kali (1110 kali)
+34. suka (1096 kali)
+35. jauh (1080 kali)
+36. udh (1015 kali)
+37. harga (1013 kali)
+38. drivernya (991 kali)
+39. mantap (962 kali)
+40. pas (938 kali)
+41. mohon (931 kali)
+42. jelas (922 kali)
+43. sen (915 kali)
+44. jalan (906 kali)
+45. moga (877 kali)
+46. hp (856 kali)
+47. beli (851 kali)
+48. naik (851 kali)
+49. update (849 kali)
+50. cepat (844 kali)
+
+buat menjadi seperti ini : 
+("Permasalahan Aplikasi Lambat/Lagging", ["lambat"]),
+("Permasalahan Kompatibilitas Aplikasi dengan HP", ["hp"]),
+
+buat 10 kalimat saja 
+
+
+gojek 
+
+[
+    ("Pemasalah Kinerja Aplikasi", ["aplikasi", "apk", "lambat", "masuk", "buka", "update", "hp"]),
+    ("Pemasalah Pengalaman dengan Driver", ["driver", "drivernya", "bantu", "tolong", "jalan"]),
+    ("Pemasalah Fitur Pembayaran dan Keuangan", ["gopay", "bayar", "saldo", "biaya", "voucher", "harga"]),
+    ("Pemasalah Kualitas Layanan dan Kemudahan", ["layan", "guna", "mudah", "cepat", "jelas", "pas"]),
+    ("Pemasalah Promosi dan Diskon", ["promo", "voucher"]),
+    ("Pemasalah Pengalaman Pemesanan Makanan (GoFood)", ["gofood", "makan", "pesan", "order"]),
+    ("Pemasalah Umpan Balik Negatif dan Kekecewaan", ["kecewa", "mahal", "susah"]),
+    ("Pemasalah Permintaan Bantuan dan Dukungan", ["bantu", "tolong", "pihak", "mohon"]),
+    ("Pemasalah Isu dan Kendala Umum", ["udah", "banget", "akun", "kali", "jauh", "udh"])
+]
+
+aplikasi 
+
+[
+    ("Kinerja dan Fungsi Aplikasi", ["aplikasi", "buka", "masuk", "update", "guna", "tambah"]),
+    ("Interaksi dengan Driver", ["driver", "drivernya", "bantu", "tolong"]),
+    ("Sistem Pembayaran dan Biaya", ["gopay", "biaya", "bayar", "saldo", "ongkir", "harga", "voucher"]),
+    ("Umpan Balik Positif", ["bagus", "baik", "mantap", "suka", "pas"]),
+    ("Umpan Balik Negatif dan Masalah", ["banget", "udah", "mahal", "kecewa", "susah", "masalah"]),
+    ("Kemudahan Penggunaan", ["mudah", "jelas"]),
+    ("Pemesanan Makanan (GoFood)", ["pesan", "makan", "gofood", "beli"]),
+    ("Promosi dan Diskon", ["promo", "voucher"]),
+    ("Fitur dan Aspek Lain", ["akun", "bintang", "belah", "jasa", "bikin"]),
+    ("Penyebutan Gojek dalam Konteks Aplikasi", ["gojek"])
+]
+
+driver 
+
+[
+    ("Pengalaman dengan Driver", ["driver", "drivernya", "ramah", "jemput", "ambil"]),
+    ("Masalah Pemesanan dan Order", ["order", "pesan", "cancel", "nunggu", "gofood", "resto"]),
+    ("Jarak dan Lokasi", ["jauh", "lokasi", "titik", "jalan"]),
+    ("Kualitas Pelayanan Driver", ["baik", "tolong", "layan", "cepat", "suka"]),
+    ("Kendala dan Kesulitan", ["susah", "kecewa", "kurang"]),
+    ("Waktu dan Durasi", ["jam", "waktu", "nunggu"]),
+    ("Biaya dan Pembayaran", ["biaya", "bayar", "harga"]),
+    ("Kondisi Tertentu", ["hujan"]),
+    ("Penyebutan Layanan Gojek Lain", ["gocar"]),
+    ("Istilah Umum dan Kata Penghubung", ["udah", "banget", "kali", "sen", "klo", "baru", "dpt", "minta", "sistem", "guna", "mahal", "pas", "bagus", "udh", "sampe"])
+]
+
+Gopay
+
+[
+    ("Saldo dan Isi Ulang Gopay", ["gopay", "saldo", "masuk", "isi", "uang"]),
+    ("Pembayaran dengan Gopay", ["bayar", "transaksi", "potong", "kembali", "beli", "laku"]),
+    ("Masalah dan Kendala Akun Gopay", ["akun", "blokir", "upgrade", "up", "ktp", "pinjam", "pin", "hilang"]),
+    ("Penggunaan dan Fungsi Gopay", ["guna", "later"]),
+    ("Umpan Balik Negatif tentang Gopay", ["kecewa", "gagal", "masalah", "susah"]),
+    ("Permintaan Bantuan dan Dukungan Gopay", ["tolong", "bantu", "pihak", "lapor", "mohon", "cs"]),
+    ("Fitur Transfer Gopay", ["transfer", "kirim", "bank"]),
+    ("Promosi dan Penawaran Gopay", ["promo"]),
+    ("Kondisi dan Penilaian Umum Gopay", ["udah", "banget", "baik", "jelas", "baru", "kali", "udh", "pas", "gimana"]),
+    ("Aspek Teknis Aplikasi Gopay", ["aplikasi", "apk", "update"])
+]
+
+promo
+
+[
+    ("Jenis dan Keuntungan Promo", ["promo", "voucher", "diskon", "murah"]),
+    ("Promo pada Layanan Gojek", ["gofood", "goride", "makan", "resto", "food"]),
+    ("Ketersediaan dan Frekuensi Promo", ["banyakin", "jarang", "dpt"]),
+    ("Harga dan Potongan Harga", ["mahal", "harga", "ongkir", "biaya", "potong"]),
+    ("Umpan Balik Positif Terkait Promo", ["bagus", "mantap", "suka", "mudah"]),
+    ("Umpan Balik Negatif Terkait Promo", ["kecewa", "kurang", "hilang"]),
+    ("Akses dan Penggunaan Promo", ["aplikasi", "akun", "pakai", "langgan", "gabung"]),
+    ("Permintaan dan Harapan Terkait Promo", ["tolong", "bantu", "moga", "tambah"]),
+    ("Kondisi Terkait Promo", ["udah", "banget", "baru", "bayar", "layan", "baik", "pesan", "order", "klo", "pas", "skrg"]),
+    ("Penyebutan Umum Terkait Gojek", ["gojek", "driver", "gopay", "promonya"])
+]
+
+layan
+
+[
+    ("Kualitas Pelayanan", ["baik", "bagus", "cepat", "ramah", "mantap", "muas", "puas", "terimakasih"]),
+    ("Aspek Biaya dan Harga Layanan", ["biaya", "mahal", "harga", "ongkir"]),
+    ("Pengalaman dengan Driver", ["driver", "drivernya"]),
+    ("Umpan Balik Negatif Terhadap Layanan", ["kecewa", "buruk", "kurang", "masalah", "susah"]),
+    ("Permintaan Bantuan dan Peningkatan Layanan", ["bantu", "tolong", "moga", "beri", "tambah"]),
+    ("Kemudahan dan Kegunaan Layanan", ["guna", "mudah"]),
+    ("Layanan GoFood", ["gofood", "makan", "pesan", "order"]),
+    ("Layanan Gojek Secara Umum", ["gojek"]),
+    ("Aspek Teknis Aplikasi Terkait Layanan", ["aplikasi", "akun", "masuk"]),
+    ("Faktor Waktu dalam Layanan", ["waktu"])
+]
+
+bayar
+
+[
+    ("Metode Pembayaran Gopay", ["gopay", "saldo"]),
+    ("Pembayaran dengan GopayLater", ["gopaylater", "paylater", "later", "tagih", "telat", "denda", "limit", "bulan"]),
+    ("Proses Pembayaran", ["bayar", "transaksi", "potong"]),
+    ("Penggunaan Pembayaran untuk Layanan Gojek", ["gojek", "driver", "pesan", "order", "gofood", "beli", "makan"]),
+    ("Permasalahan Pembayaran", ["kecewa", "blokir", "mahal", "kena"]),
+    ("Permintaan Bantuan Terkait Pembayaran", ["tolong", "bantu", "suruh", "minta"]),
+    ("Kondisi Pembayaran", ["udah", "pas", "baru", "laku"]),
+    ("Aspek Finansial Pembayaran", ["biaya", "uang", "harga"]),
+    ("Kualitas dan Kejelasan Informasi Pembayaran", ["baik", "jelas"]),
+    ("Aspek Teknis Aplikasi Terkait Pembayaran", ["aplikasi", "masuk", "akun", "apk", "update"])
+]
+
+pesan
+
+[
+    ("Interaksi dengan Driver Saat Pemesanan", ["driver", "drivernya", "tolong", "bantu", "nunggu", "cari", "ambil", "tunggu"]),
+    ("Pemesanan Makanan (GoFood)", ["makan", "gofood", "resto", "food"]),
+    ("Masalah dan Kendala Pemesanan", ["batal", "kecewa", "mahal", "cancel", "susah", "kurang", "salah"]),
+    ("Waktu Pemesanan dan Pengiriman", ["jam", "waktu"]),
+    ("Biaya dan Pembayaran Pemesanan", ["biaya", "bayar", "harga", "ongkir"]),
+    ("Proses dan Status Pemesanan", ["order", "sesuai", "langsung"]),
+    ("Kualitas Layanan Pemesanan", ["baik", "layan", "cepat", "guna", "bagus", "mudah"]),
+    ("Pemesanan Layanan Gojek Lain", ["gocar"]),
+    ("Umpan Balik Umum Terkait Pemesanan", ["udah", "banget", "kali", "baru", "pas"]),
+    ("Aspek Teknis Aplikasi Pemesanan", ["aplikasi", "lokasi", "masuk"])
+]
+
+gofood 
+
+[
+    ("Pengalaman Pemesanan GoFood", ["gofood", "pesan", "order"]),
+    ("Promo dan Diskon GoFood", ["promo", "voucher", "diskon"]),
+    ("Biaya dan Harga GoFood", ["mahal", "biaya", "ongkir", "harga"]),
+    ("Interaksi dengan Driver GoFood", ["driver", "drivernya", "tolong", "bantu", "nunggu", "cari"]),
+    ("Kualitas Layanan GoFood", ["layan", "baik", "bagus", "cepat", "suka"]),
+    ("Pilihan Restoran GoFood", ["resto"]),
+    ("Umpan Balik Negatif GoFood", ["kecewa", "susah", "jauh", "kurang"]),
+    ("Fitur dan Kemudahan Aplikasi GoFood", ["aplikasi", "guna", "mudah", "buka"]),
+    ("Waktu Pemesanan dan Pengiriman GoFood", ["jam"]),
+    ("Aspek Pembayaran GoFood", ["gopay", "bayar"])
+]
+
+akun 
+
+[
+    ("Masalah Akses Akun", ["blokir", "masuk", "login", "buka", "hapus"]),
+    ("Gopay dan Saldo Akun", ["gopay", "saldo", "transaksi", "bayar", "laku"]),
+    ("Informasi Pribadi Akun", ["hp", "email", "nomor"]),
+    ("Promo dan Voucher Terkait Akun", ["promo", "voucher"]),
+    ("Umpan Balik Negatif dan Kendala Akun", ["kecewa", "masalah", "hilang", "susah", "salah", "beku"]),
+    ("Permintaan Bantuan dan Dukungan Akun", ["tolong", "bantu", "lapor", "cs", "mohon"]),
+    ("Pendaftaran dan Pengaturan Akun", ["daftar", "ganti"]),
+    ("Penyebutan Layanan Gojek Terkait Akun", ["gojek", "driver", "order", "gofood"]),
+    ("Kondisi dan Penilaian Umum Akun", ["guna", "udah", "baru", "jelas", "baik", "banget", "no", "gimana", "alas", "udh", "pas"]),
+    ("Aspek Teknis Aplikasi dan Akun", ["aplikasi", "apk"])
+]
+
+
+
+dari kata kata di sini : 
+File aplikasi.csv:
+1. aplikasi (24878 kali)
+2. gojek (7162 kali)
+3. driver (3501 kali)
+4. bantu (3095 kali)
+5. bagus (2522 kali)
+6. guna (2221 kali)
+7. gopay (2013 kali)
+8. biaya (1925 kali)
+9. baik (1889 kali)
+10. banget (1713 kali)
+11. udah (1611 kali)
+12. pesan (1505 kali)
+13. tolong (1486 kali)
+14. bayar (1449 kali)
+15. buka (1410 kali)
+16. mudah (1340 kali)
+17. makan (1338 kali)
+18. mahal (1239 kali)
+19. masuk (1198 kali)
+20. gofood (1155 kali)
+21. order (1127 kali)
+22. update (1086 kali)
+23. baru (1061 kali)
+24. layan (1011 kali)
+25. kecewa (984 kali)
+26. saldo (967 kali)
+27. promo (931 kali)
+28. suka (900 kali)
+29. jelas (886 kali)
+30. susah (872 kali)
+31. akun (859 kali)
+32. harga (823 kali)
+33. kali (773 kali)
+34. tambah (767 kali)
+35. pas (677 kali)
+36. hp (670 kali)
+37. drivernya (639 kali)
+38. jauh (638 kali)
+39. sen (633 kali)
+40. masalah (624 kali)
+41. bintang (605 kali)
+42. belah (581 kali)
+43. udh (581 kali)
+44. ongkir (581 kali)
+45. mohon (570 kali)
+46. jasa (568 kali)
+47. bikin (560 kali)
+48. beli (554 kali)
+49. voucher (554 kali)
+50. mantap (552 kali)
+
+coba cari permasalah permalahan yang ada pada aplikasi gojek 
+contohnya adalah : 
+    ("Permasalahan Aplikasi Error/Gangguan", ["error", "gangguan"]),
+
+carilah permasalah permasalaham yang ada pada apliasi gojek minimal 10  label
+
+
+
+
+
+
+
+[
+    ("Permasalahan Aplikasi Lambat/Lagging", ["susah", "layan"]), # "Susah" bisa mengindikasikan kesulitan yang mungkin disebabkan kelambatan, "layan" (layanan) yang lambat
+    ("Permasalahan Aplikasi Error/Gangguan", ["masalah"]), # "Masalah" adalah istilah umum untuk error/gangguan
+    ("Permasalahan Sering Keluar Sendiri (Force Close)", []), # Tidak ada kata yang secara eksplisit menunjukkan ini
+    ("Permasalahan Tidak Bisa Login/Masuk Akun", ["masuk", "akun", "buka"]), # "Masuk" dan "akun" jelas, "buka" bisa berarti kesulitan membuka aplikasi/login
+    ("Permasalahan Masalah Update Aplikasi", ["update", "baru"]), # "Update" dan "baru" mengacu pada proses pembaruan
+    ("Permasalahan Tampilan Aplikasi Bermasalah", []), # Tidak ada kata yang secara spesifik mengarah ke tampilan
+    ("Permasalahan Notifikasi Tidak Muncul", []), # Tidak ada kata yang secara spesifik mengarah ke notifikasi
+    ("Permasalahan Aplikasi Tidak Respon", ["susah"]), # "Susah" bisa juga mengindikasikan aplikasi yang tidak merespon
+    ("Permasalahan Biaya/Harga Mahal", ["mahal", "biaya", "harga", "ongkir"]), # Kata-kata terkait biaya yang tinggi
+    ("Permasalahan Pembayaran (Gopay/Saldo)", ["gopay", "saldo", "bayar", "voucher"]), # Kata-kata terkait sistem pembayaran
+    ("Permasalahan dengan Driver", ["driver", "drivernya", "jauh"]), # Kata-kata terkait interaksi dengan driver
+    ("Permasalahan Pemesanan/Order Bermasalah", ["pesan", "order", "gofood", "makan", "beli"]), # Kata-kata terkait proses pemesanan
+    ("Permasalahan Promo Tidak Berfungsi/Sulit Didapatkan", ["promo"]), # Kata "promo" mengindikasikan masalah terkait promo
+]
+
+
+
+aplikasi = [
+    ("Pemasalahan Kinerja dan Fungsi Aplikasi", ["aplikasi", "buka", "masuk", "update", "guna", "tambah"]),
+    ("Pemasalahan Interaksi dengan Driver", ["driver", "drivernya", "bantu", "tolong"]),
+    ("Pemasalahan Sistem Pembayaran dan Biaya", ["gopay", "biaya", "bayar", "saldo", "ongkir", "harga", "voucher"]),
+    ("Pemasalahan Umpan Balik Positif", ["bagus", "baik", "mantap", "suka", "pas"]),
+    ("Pemasalahan Umpan Balik Negatif dan Masalah", ["banget", "udah", "mahal", "kecewa", "susah", "masalah"]),
+    ("Pemasalahan Kemudahan Penggunaan", ["mudah", "jelas"]),
+    ("Pemasalahan Pemesanan Makanan (GoFood)", ["pesan", "makan", "gofood", "beli"]),
+    ("Pemasalahan Promosi dan Diskon", ["promo", "voucher"]),
+    ("Pemasalahan Fitur dan Aspek Lain", ["akun", "bintang", "belah", "jasa", "bikin"]),
+    ("Pemasalahan Penyebutan Gojek dalam Konteks Aplikasi", ["gojek"])
+]
+
+driver = [
+    ("Pemasalahan Pengalaman dengan Driver", ["driver", "drivernya", "ramah", "jemput", "ambil"]),
+    ("Pemasalahan Masalah Pemesanan dan Order", ["order", "pesan", "cancel", "nunggu", "gofood", "resto"]),
+    ("Pemasalahan Jarak dan Lokasi", ["jauh", "lokasi", "titik", "jalan"]),
+    ("Pemasalahan Kualitas Pelayanan Driver", ["baik", "tolong", "layan", "cepat", "suka"]),
+    ("Pemasalahan Kendala dan Kesulitan", ["susah", "kecewa", "kurang"]),
+    ("Pemasalahan Waktu dan Durasi", ["jam", "waktu", "nunggu"]),
+    ("Pemasalahan Biaya dan Pembayaran", ["biaya", "bayar", "harga"]),
+    ("Pemasalahan Kondisi Tertentu", ["hujan"]),
+    ("Pemasalahan Penyebutan Layanan Gojek Lain", ["gocar"]),
+    ("Pemasalahan Istilah Umum dan Kata Penghubung", ["udah", "banget", "kali", "sen", "klo", "baru", "dpt", "minta", "sistem", "guna", "mahal", "pas", "bagus", "udh", "sampe"])
+]
+
+Gopay = [
+    ("Pemasalahan Saldo dan Isi Ulang Gopay", ["gopay", "saldo", "masuk", "isi", "uang"]),
+    ("Pemasalahan Pembayaran dengan Gopay", ["bayar", "transaksi", "potong", "kembali", "beli", "laku"]),
+    ("Pemasalahan Masalah dan Kendala Akun Gopay", ["akun", "blokir", "upgrade", "up", "ktp", "pinjam", "pin", "hilang"]),
+    ("Pemasalahan Penggunaan dan Fungsi Gopay", ["guna", "later"]),
+    ("Pemasalahan Umpan Balik Negatif tentang Gopay", ["kecewa", "gagal", "masalah", "susah"]),
+    ("Pemasalahan Permintaan Bantuan dan Dukungan Gopay", ["tolong", "bantu", "pihak", "lapor", "mohon", "cs"]),
+    ("Pemasalahan Fitur Transfer Gopay", ["transfer", "kirim", "bank"]),
+    ("Pemasalahan Promosi dan Penawaran Gopay", ["promo"]),
+    ("Pemasalahan Kondisi dan Penilaian Umum Gopay", ["udah", "banget", "baik", "jelas", "baru", "kali", "udh", "pas", "gimana"]),
+    ("Pemasalahan Aspek Teknis Aplikasi Gopay", ["aplikasi", "apk", "update"])
+]
+
+promo = [
+    ("Pemasalahan Jenis dan Keuntungan Promo", ["promo", "voucher", "diskon", "murah"]),
+    ("Pemasalahan Promo pada Layanan Gojek", ["gofood", "goride", "makan", "resto", "food"]),
+    ("Pemasalahan Ketersediaan dan Frekuensi Promo", ["banyakin", "jarang", "dpt"]),
+    ("Pemasalahan Harga dan Potongan Harga", ["mahal", "harga", "ongkir", "biaya", "potong"]),
+    ("Pemasalahan Umpan Balik Positif Terkait Promo", ["bagus", "mantap", "suka", "mudah"]),
+    ("Pemasalahan Umpan Balik Negatif Terkait Promo", ["kecewa", "kurang", "hilang"]),
+    ("Pemasalahan Akses dan Penggunaan Promo", ["aplikasi", "akun", "pakai", "langgan", "gabung"]),
+    ("Pemasalahan Permintaan dan Harapan Terkait Promo", ["tolong", "bantu", "moga", "tambah"]),
+    ("Pemasalahan Kondisi Terkait Promo", ["udah", "banget", "baru", "bayar", "layan", "baik", "pesan", "order", "klo", "pas", "skrg"]),
+    ("Pemasalahan Penyebutan Umum Terkait Gojek", ["gojek", "driver", "gopay", "promonya"])
+]
+
+layan = [
+    ("Pemasalahan Kualitas Pelayanan", ["baik", "bagus", "cepat", "ramah", "mantap", "muas", "puas", "terimakasih"]),
+    ("Pemasalahan Aspek Biaya dan Harga Layanan", ["biaya", "mahal", "harga", "ongkir"]),
+    ("Pemasalahan Pengalaman dengan Driver", ["driver", "drivernya"]),
+    ("Pemasalahan Umpan Balik Negatif Terhadap Layanan", ["kecewa", "buruk", "kurang", "masalah", "susah"]),
+    ("Pemasalahan Permintaan Bantuan dan Peningkatan Layanan", ["bantu", "tolong", "moga", "beri", "tambah"]),
+    ("Pemasalahan Kemudahan dan Kegunaan Layanan", ["guna", "mudah"]),
+    ("Pemasalahan Layanan GoFood", ["gofood", "makan", "pesan", "order"]),
+    ("Pemasalahan Layanan Gojek Secara Umum", ["gojek"]),
+    ("Pemasalahan Aspek Teknis Aplikasi Terkait Layanan", ["aplikasi", "akun", "masuk"]),
+    ("Pemasalahan Faktor Waktu dalam Layanan", ["waktu"])
+]
+
+bayar = [
+    ("Pemasalahan Metode Pembayaran Gopay", ["gopay", "saldo"]),
+    ("Pemasalahan Pembayaran dengan GopayLater", ["gopaylater", "paylater", "later", "tagih", "telat", "denda", "limit", "bulan"]),
+    ("Pemasalahan Proses Pembayaran", ["bayar", "transaksi", "potong"]),
+    ("Pemasalahan Penggunaan Pembayaran untuk Layanan Gojek", ["gojek", "driver", "pesan", "order", "gofood", "beli", "makan"]),
+    ("Pemasalahan Permasalahan Pembayaran", ["kecewa", "blokir", "mahal", "kena"]),
+    ("Pemasalahan Permintaan Bantuan Terkait Pembayaran", ["tolong", "bantu", "suruh", "minta"]),
+    ("Pemasalahan Kondisi Pembayaran", ["udah", "pas", "baru", "laku"]),
+    ("Pemasalahan Aspek Finansial Pembayaran", ["biaya", "uang", "harga"]),
+    ("Pemasalahan Kualitas dan Kejelasan Informasi Pembayaran", ["baik", "jelas"]),
+    ("Pemasalahan Aspek Teknis Aplikasi Terkait Pembayaran", ["aplikasi", "masuk", "akun", "apk", "update"])
+]
+
+pesan = [
+    ("Pemasalahan Interaksi dengan Driver Saat Pemesanan", ["driver", "drivernya", "tolong", "bantu", "nunggu", "cari", "ambil", "tunggu"]),
+    ("Pemasalahan Pemesanan Makanan (GoFood)", ["makan", "gofood", "resto", "food"]),
+    ("Pemasalahan Masalah dan Kendala Pemesanan", ["batal", "kecewa", "mahal", "cancel", "susah", "kurang", "salah"]),
+    ("Pemasalahan Waktu Pemesanan dan Pengiriman", ["jam", "waktu"]),
+    ("Pemasalahan Biaya dan Pembayaran Pemesanan", ["biaya", "bayar", "harga", "ongkir"]),
+    ("Pemasalahan Proses dan Status Pemesanan", ["order", "sesuai", "langsung"]),
+    ("Pemasalahan Kualitas Layanan Pemesanan", ["baik", "layan", "cepat", "guna", "bagus", "mudah"]),
+    ("Pemasalahan Pemesanan Layanan Gojek Lain", ["gocar"]),
+    ("Pemasalahan Umpan Balik Umum Terkait Pemesanan", ["udah", "banget", "kali", "baru", "pas"]),
+    ("Pemasalahan Aspek Teknis Aplikasi Pemesanan", ["aplikasi", "lokasi", "masuk"])
+]
+
+gofood = [
+    ("Pemasalahan Pengalaman Pemesanan GoFood", ["gofood", "pesan", "order"]),
+    ("Pemasalahan Promo dan Diskon GoFood", ["promo", "voucher", "diskon"]),
+    ("Pemasalahan Biaya dan Harga GoFood", ["mahal", "biaya", "ongkir", "harga"]),
+    ("Pemasalahan Interaksi dengan Driver GoFood", ["driver", "drivernya", "tolong", "bantu", "nunggu", "cari"]),
+    ("Pemasalahan Kualitas Layanan GoFood", ["layan", "baik", "bagus", "cepat", "suka"]),
+    ("Pemasalahan Pilihan Restoran GoFood", ["resto"]),
+    ("Pemasalahan Umpan Balik Negatif GoFood", ["kecewa", "susah", "jauh", "kurang"]),
+    ("Pemasalahan Fitur dan Kemudahan Aplikasi GoFood", ["aplikasi", "guna", "mudah", "buka"]),
+    ("Pemasalahan Waktu Pemesanan dan Pengiriman GoFood", ["jam"]),
+    ("Pemasalahan Aspek Pembayaran GoFood", ["gopay", "bayar"])
+]
+
+akun = [
+    ("Pemasalahan Masalah Akses Akun", ["blokir", "masuk", "login", "buka", "hapus"]),
+    ("Pemasalahan Gopay dan Saldo Akun", ["gopay", "saldo", "transaksi", "bayar", "laku"]),
+    ("Pemasalahan Informasi Pribadi Akun", ["hp", "email", "nomor"]),
+    ("Pemasalahan Promo dan Voucher Terkait Akun", ["promo", "voucher"]),
+    ("Pemasalahan Umpan Balik Negatif dan Kendala Akun", ["kecewa", "masalah", "hilang", "susah", "salah", "beku"]),
+    ("Pemasalahan Permintaan Bantuan dan Dukungan Akun", ["tolong", "bantu", "lapor", "cs", "mohon"]),
+    ("Pemasalahan Pendaftaran dan Pengaturan Akun", ["daftar", "ganti"]),
+    ("Pemasalahan Penyebutan Layanan Gojek Terkait Akun", ["gojek", "driver", "order", "gofood"]),
+    ("Pemasalahan Kondisi dan Penilaian Umum Akun", ["guna", "udah", "baru", "jelas", "baik", "banget", "no", "gimana", "alas", "udh", "pas"]),
+    ("Pemasalahan Aspek Teknis Aplikasi dan Akun", ["aplikasi", "apk"])
+]
+
+
+coba analisa masalah apa yang sering keluar pada gojek 
+data data tersebut saya sudah bagi bagi menjadi beberapa bagian 
+saya akan mencari masalah masalah yang ada dengan cara menganalisa dari kata kata yang sering muncul 
+
+dalam gojek kata yang sering mucul adalah sebagai berikut : 
+1. gojek (33103 kali)
+2. aplikasi (6802 kali)
+3. driver (5494 kali)
+4. bantu (3276 kali)
+5. tolong (2622 kali)
+6. gopay (2552 kali)
+7. baik (2482 kali)
+8. guna (2336 kali)
+9. udah (2322 kali)
+10. banget (2321 kali)
+11. akun (2185 kali)
+12. pesan (1972 kali)
+13. layan (1956 kali)
+14. promo (1897 kali)
+15. order (1774 kali)
+16. bayar (1751 kali)
+17. gofood (1706 kali)
+18. kecewa (1671 kali)
+19. makan (1604 kali)
+20. masuk (1470 kali)
+21. baru (1451 kali)
+22. mudah (1438 kali)
+23. bagus (1328 kali)
+24. mahal (1282 kali)
+25. pihak (1281 kali)
+26. saldo (1246 kali)
+27. buka (1242 kali)
+28. apk (1219 kali)
+29. biaya (1191 kali)
+30. voucher (1188 kali)
+31. terimakasih (1187 kali)
+32. susah (1128 kali)
+33. kali (1110 kali)
+34. suka (1096 kali)
+35. jauh (1080 kali)
+36. udh (1015 kali)
+37. harga (1013 kali)
+38. drivernya (991 kali)
+39. mantap (962 kali)
+40. pas (938 kali)
+41. mohon (931 kali)
+42. jelas (922 kali)
+43. sen (915 kali)
+44. jalan (906 kali)
+45. moga (877 kali)
+46. hp (856 kali)
+47. beli (851 kali)
+48. naik (851 kali)
+49. update (849 kali)
+50. cepat (844 kali)
+
+
+coba buat 10 seperti di bawah : 
+misalnya adalah : 
+    ("Permasalahan Driver Membatalkan Pesanan", ["cancel", "batal"]),
+    ("Permasalahan Driver mengambil orderan terlalu jauh", ["jauh"]),
+
+
+=== Gojek === 
+
+[
+    ("Permasalahan Aplikasi dan Akses", ["aplikasi", "apk", "buka", "masuk", "update", "susah"]),
+    ("Kendala Pembayaran dan Gopay", ["gopay", "bayar", "saldo", "biaya", "harga", "mahal"]),
+    ("Masalah Pemesanan dan Driver", ["driver", "drivernya", "pesan", "order", "tolong", "bantu", "jauh"]),
+    ("Isu Terkait Promo dan Voucher", ["promo", "voucher", "guna"]),
+    ("Kualitas dan Kepuasan Layanan", ["kecewa", "layan", "baik", "bagus", "mantap", "cepat"]),
+    ("Keluhan dan Ekspresi Negatif", ["udah", "banget", "udh"]),
+    ("Permintaan Bantuan dan Informasi", ["bantu", "tolong", "pihak", "mohon", "jelas"]),
+    ("Pengalaman Penggunaan GoFood", ["gofood", "makan", "beli"]),
+    ("Hal-hal Positif dan Apresiasi", ["terimakasih", "suka", "pas"]),
+    ("Masalah Teknis dan Perangkat", ["hp", "akun", "sen", "jalan", "kali", "baru"]),
+]
+
+=== Aplikasi ===
+coba analisa masalah apa yang sering keluar pada gojek 
+data data tersebut saya sudah bagi bagi menjadi beberapa bagian 
+saya akan mencari masalah masalah yang ada dengan cara menganalisa dari kata kata yang sering muncul 
+
+dalam gojek kata yang sering mucul adalah sebagai berikut : 
+File aplikasi.csv:
+1. aplikasi (24878 kali)
+2. gojek (7162 kali)
+3. driver (3501 kali)
+4. bantu (3095 kali)
+5. bagus (2522 kali)
+6. guna (2221 kali)
+7. gopay (2013 kali)
+8. biaya (1925 kali)
+9. baik (1889 kali)
+10. banget (1713 kali)
+11. udah (1611 kali)
+12. pesan (1505 kali)
+13. tolong (1486 kali)
+14. bayar (1449 kali)
+15. buka (1410 kali)
+16. mudah (1340 kali)
+17. makan (1338 kali)
+18. mahal (1239 kali)
+19. masuk (1198 kali)
+20. gofood (1155 kali)
+21. order (1127 kali)
+22. update (1086 kali)
+23. baru (1061 kali)
+24. layan (1011 kali)
+25. kecewa (984 kali)
+26. saldo (967 kali)
+27. promo (931 kali)
+28. suka (900 kali)
+29. jelas (886 kali)
+30. susah (872 kali)
+31. akun (859 kali)
+32. harga (823 kali)
+33. kali (773 kali)
+34. tambah (767 kali)
+35. pas (677 kali)
+36. hp (670 kali)
+37. drivernya (639 kali)
+38. jauh (638 kali)
+39. sen (633 kali)
+40. masalah (624 kali)
+41. bintang (605 kali)
+42. belah (581 kali)
+43. udh (581 kali)
+44. ongkir (581 kali)
+45. mohon (570 kali)
+46. jasa (568 kali)
+47. bikin (560 kali)
+48. beli (554 kali)
+49. voucher (554 kali)
+50. mantap (552 kali)
+
+coba buat 10 seperti di bawah : 
+misalnya adalah : 
+    ("Permasalahan Aplikasi lambat/lagging", ["lama", "lemot"]),
+    ("Permasalahan Aplikasi Eror/ganggunan", ["eror"]),
+
+
+=== permasalahan aplikasi ===
+
+[
+    ("Permasalahan Aplikasi dan Update", ["aplikasi", "update", "buka", "masuk", "hp"]),
+    ("Permasalahan Pembayaran (Gopay)", ["gopay", "bayar", "saldo", "biaya"]),
+    ("Mahalnya Biaya dan Ongkos Kirim", ["mahal", "biaya", "ongkir"]),
+    ("Masalah dengan Driver", ["driver", "drivernya", "jauh", "bintang"]),
+    ("Kendala Pemesanan (Gofood)", ["pesan", "order", "gofood", "makan", "beli"]),
+    ("Kebutuhan Bantuan dan Dukungan", ["bantu", "tolong", "mohon"]),
+    ("Kekecewaan Terhadap Layanan", ["kecewa", "layan"]),
+    ("Permasalahan Akun", ["akun", "masuk"]), # "masuk" bisa masuk ke aplikasi atau akun
+    ("Sulit dan Susahnya Penggunaan", ["susah", "sulit"]), # "sulit" bisa diinterpretasikan dari konteks "susah"
+    ("Keinginan Mendapatkan Promo dan Voucher", ["promo", "voucher"]),
+]
